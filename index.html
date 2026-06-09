@@ -60,6 +60,35 @@
         section {
             scroll-margin-top: 20px;
         }
+
+        /* --- NEW STYLES FOR THE ABOUT ME SECTION --- */
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        /* Styling the image so it looks neat */
+        .about-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* Optional: rounds the corners slightly */
+            object-fit: cover;
+        }
+        
+        /* On screens wider than 600px, put the text and image side-by-side */
+        @media (min-width: 600px) {
+            .about-container {
+                flex-direction: row;
+                align-items: center;
+            }
+            .about-text {
+                flex: 2; /* Gives text more weight */
+            }
+            .about-image {
+                flex: 1; /* Keeps image compact */
+                max-width: 250px; /* Prevents the image from getting too massive */
+            }
+        }
     </style>
 </head>
 <body>
@@ -79,9 +108,14 @@
         <div class="content">
             <section id="about">
                 <h1>Hello to anyone reading this!</h1>
-                <p>This is my first HTML page. For now, I'm just playing around and getting the hang of things.
-                I'll be summarizing whatever I read on an AI newsletter called The Neuron!
-                It sounds fun, and I'll also be able to play around with the basic components of an HTML...just like in the "good old days!"</p>
+                <div class="about-container">
+                    <div class="about-text">
+                        <p>This is my first HTML page. For now, I'm just playing around and getting the hang of things.
+                        I'll be summarizing whatever I read on an AI newsletter called The Neuron!
+                        It sounds fun, and I'll also be able to play around with the basic components of an HTML...just like in the "good old days!"</p>
+                    </div>
+                    <img class="about-image" src="your-profile-pic.jpg" alt="A photo of me or a cool neuron graphic">
+                </div>
             </section>
 
             <hr style="margin: 40px 0; border: 0; border-top: 1px solid #ccc;">
