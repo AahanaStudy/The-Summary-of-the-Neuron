@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Neuron Nonsense</title>
     
     <style>
         /* Centers your content and prevents it from stretching too wide */
@@ -38,6 +38,27 @@
         header .content {
             background-color: transparent;
             min-height: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* Styling for the new navigation links */
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        /* Smooth scrolling effect when clicking links */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Adds a little space above targeted sections so headings aren't cut off */
+        section {
+            scroll-margin-top: 20px;
         }
     </style>
 </head>
@@ -46,33 +67,46 @@
       <div class="wrap">
         <nav class="content">
             <strong>Neuron Nonsense - Gossip Column Extraordinaire!</strong>
+            <div class="nav-links">
+                <a href="#about">About Me</a>
+                <a href="#blog">Blog</a>
+            </div>
         </nav>
       </div>
     </header>
     <main>
       <div class="wrap">
         <div class="content">
-            <h1>Hello to anyone reading this!</h1>
-            <p>This is my first HTML page. For now, I'm just playing around and getting the hang of things.
-      I'll be summarizing whatever I read on an AI newsletter called The Neuron!
-    It sounds fun, and I'll also be able to play around with the basic components of an HTML...just like in the "good old days!"</p>
-        <h2> 5/5/2026: The day we've all been waiting for has arrived! AI CAN SPOT CANCER!!! </h2>
-    <p> So, turns out Mayo Clinic has an AI model called REDMOD, and it can spot cancer better than human doctors. 
-    In fact, REDMOD detected pancreatic cancer 3 years before disgnosis! 
-    When given 2,000 CT scans, REDMOD managed to flag a little under 40% more scans as prediagnostic cancers than human doctors did!. 
-    This is a huge breakthrough because of how unpredictable, undetectable, and deadly cancer is. </p>
-    <h2>5/18/2026: Wow, now even my CURSOR is smarter than me...</h2>
-    <p>I was reading the Neuron again, and the article that caught my eye was talking about the fact that Google clearly has a lot of projects going on.
-    They've been working on this smart cursor that is going to be on the frontlines of a new era or technology, apparently.
-    The article said something about the cursor having AI integrated in it, so it can also gather context based on where your cursor is on a screen.
-    Instead of having to specify your prompts, it seems like AI should be able to understand "this" and "that" based on where the cursor is pointing.
-    Even my cursor is better at understanding social cues and context clues better than me! Talk about embarrassing!</p> 
-    <h2>5/25/2026: Our beloved music streaming app was smart, but now it's SMARTER</h2>
-    <p>I was bored, so naturally, I did what any teen would do. Opened my email inbox, and looked up what randoms stuff AI
-    is capable of doing now. I wasn't disappointed! We've all used Spotify before. To stream music, read audiobooks, etc etc!
-    Turns out they've updated it! Fans can create ai-generated remixes of their favorite artists, your personal emails and notes
-    can be turned into podcasts to listen to ("Breaking news! Your rent is overdue. 30 captivating minutes of screaming landlords! 
-    Up next, groceries!"), and now we have AI-generated audiobook voiceovers! They're monotone, but we appreciate the effort!</p>    
+            <section id="about">
+                <h1>Hello to anyone reading this!</h1>
+                <p>This is my first HTML page. For now, I'm just playing around and getting the hang of things.
+                I'll be summarizing whatever I read on an AI newsletter called The Neuron!
+                It sounds fun, and I'll also be able to play around with the basic components of an HTML...just like in the "good old days!"</p>
+            </section>
+
+            <hr style="margin: 40px 0; border: 0; border-top: 1px solid #ccc;">
+
+            <section id="blog">
+                <h2> 5/5/2026: The day we've all been waiting for has arrived! AI CAN SPOT CANCER!!! </h2>
+                <p> So, turns out Mayo Clinic has an AI model called REDMOD, and it can spot cancer better than human doctors. 
+                In fact, REDMOD detected pancreatic cancer 3 years before disgnosis! 
+                When given 2,000 CT scans, REDMOD managed to flag a little under 40% more scans as prediagnostic cancers than human doctors did!. 
+                This is a huge breakthrough because of how unpredictable, undetectable, and deadly cancer is. </p>
+                
+                <h2>5/18/2026: Wow, now even my CURSOR is smarter than me...</h2>
+                <p>I was reading the Neuron again, and the article that caught my eye was talking about the fact that Google clearly has a lot of projects going on.
+                They've been working on this smart cursor that is going to be on the frontlines of a new era or technology, apparently.
+                The article said something about the cursor having AI integrated in it, so it can also gather context based on where your cursor is on a screen.
+                Instead of having to specify your prompts, it seems like AI should be able to understand "this" and "that" based on where the cursor is pointing.
+                Even my cursor is better at understanding social cues and context clues better than me! Talk about embarrassing!</p> 
+                
+                <h2>5/25/2026: Our beloved music streaming app was smart, but now it's SMARTER</h2>
+                <p>I was bored, so naturally, I did what any teen would do. Opened my email inbox, and looked up what randoms stuff AI
+                is capable of doing now. I wasn't disappointed! We've all used Spotify before. To stream music, read audiobooks, etc etc!
+                Turns out they've updated it! Fans can create ai-generated remixes of their favorite artists, your personal emails and notes
+                can be turned into podcasts to listen to ("Breaking news! Your rent is overdue. 30 captivating minutes of screaming landlords! 
+                Up next, groceries!"), and now we have AI-generated audiobook voiceovers! They're monotone, but we appreciate the effort!</p>    
+            </section>
         </div>
         <aside class="sidebar">
             <h3>Sidebar</h3>
